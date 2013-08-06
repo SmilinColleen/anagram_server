@@ -1,10 +1,8 @@
 class Word < ActiveRecord::Base
 
   def anagrams
-
   end
 end
-
 # Take each letter of passed-in word, and shovel into array
 # Get length/size of array and sort
 # Find words in dictionary with same number of letters
@@ -16,3 +14,6 @@ end
 
 ##1) passed-in-word.downcase.split('').sort
 ##1a) length = passed-in-word.split('').length
+
+# ^^ Thought of that, and then asked ourselves if we can put the sorted word
+# into the database itself to speed things up. 
